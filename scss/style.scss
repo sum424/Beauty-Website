@@ -4,17 +4,40 @@
 @import "fonts";
 
 #head {
-    background: $navColor;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    img {
-        display: inline-block;
-        width: 8%;
-        height: 100px;
-    }
+    background: $navColor;
+    padding: 20px 5%;
 
+    img {
+        height: 60px;
+        cursor: pointer;
+    }
+    .navbar {
+        list-style-type: none;
+    }
     li {
         @include horizontal-listing;
+        /* display: inline-block; */
+        padding: 0 60px;
     }
+    a {
+        @include a-prop;
+    }
+    :hover {
+        color: #ffa3a3;
+        transition: color 0.3s ease-in;
+    }
+}
+
+/* for image slider */
+.img-slider.autoplay {
+    img {
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
 }
