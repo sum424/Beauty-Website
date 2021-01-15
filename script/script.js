@@ -1,9 +1,3 @@
-$(document).ready(function() {
-    $(".img-slider.autoplay").slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000,
-       
-    })
+$(document).ready(() => { 
+    $(".img-slider").responsiveSlides();
 });

@@ -47,13 +47,28 @@ a {
 #head :hover {
   color: #ffa3a3;
   transition: color 0.3s ease-in;
+  text-decoration: none;
 }
 
 /* for image slider */
-.img-slider.autoplay img {
+#slideshow div {
   width: 100%;
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+#slideshow .img-slider div {
+  width: 100%;
+}
+
+#slideshow .img-slider img {
+  width: 100%;
+  height: 525px;
+}
+
+.services h1 {
+  font-size: 50px;
+}
+
+.services .card {
+  width: 33.33333%;
 }
 /*# sourceMappingURL=style.css.map */

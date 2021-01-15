@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./images/icon.ico">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- link for slick image slider -->
-    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <!-- link for responsive image slider -->
+    <link rel="stylesheet" href="./ResponsiveSlides.js/responsiveslides.css">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Punam Beauty Parlour</title>
 </head>
 <body>
@@ -21,17 +23,43 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <div class="img-slider autoplay">
-            <img src="https://picsum.photos/1000/500"  alt="">
-            <img src="https://picsum.photos/1000/500"  alt="">
-            <img src="https://picsum.photos/1000/500"  alt="">
-            <img src="https://picsum.photos/1000/500"  alt="">
-            <img src="https://picsum.photos/1000/500"  alt="">
-        </div>
+    <section id="slideshow">
+         <div class="img-slider">
+            <div><img src="./images/img-1 (1).jpg"  alt="img-1"></div>
+            <div><img src="./images/img-1 (3).jpg"  alt="img-2"></div>
+            <div><img src="./images/img-1 (4).jpg"  alt="img-3"></div>
+            <div><img src="./images/img-1 (5).jpg"  alt="img-4"></div>
+            <div><img src="./images/img-1 (6).jpg"  alt="img-5"></div>
+        </div> 
     </section>
     <section> <!-- Image slidebar section with inclusion of jQuery -->
-        <div class="services"></div>
+        <div class="services">
+            <h1 class="text-center">Our Services</h1>
+                <div class="card">
+                    <img class="card-img-top" src="./images/img-2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                 <div class="card-2">
+                     <img class="card-img-top" src="./images/img-1 (4).jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>    
+                    </div>        
+                </div>
+
+                <div class="card-3" >
+                    <img class="card-img-top" src="./images/img-1 (3).jpg   " alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>    
+        </div>
     </section>
     <section> <!-- Info on owner with image and text -->
         <div class="about-us"></div>
@@ -41,7 +69,8 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./ResponsiveSlides.js/responsiveslides.min.js"></script>
     <script src="./script/script.js"></script>
 
     

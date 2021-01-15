@@ -28,16 +28,32 @@
     :hover {
         color: #ffa3a3;
         transition: color 0.3s ease-in;
+        text-decoration: none;
     }
 }
 
 /* for image slider */
-.img-slider.autoplay {
-    img {
-    width: 100%;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
+#slideshow {
+    div {
+        width: 100%;
     }
+    .img-slider{
+        div {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            height: 525px;
+        }
+    }
+}
 
+.services {
+    h1 {
+        font-size: 50px;
+    }
+    .card {
+        width: (100% / 3);
+       
+    }
 }
