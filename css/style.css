@@ -126,11 +126,44 @@ a {
 
 /* contact section */
 .contact {
-  background: linear-gradient(to left, #abbaab, #ffffff);
+  background: #8014ff;
 }
 
 .contact h1 {
   text-align: center;
-  color: deeppink;
+  color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contact .footer-lists {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.contact h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.contact h3 {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.contact .locations {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.contact a {
+  color: #ffffff;
+}
+
+.contact .copyright h3 {
+  font-size: 0.5rem;
+  text-align: right;
+  padding-right: 1%;
 }
 /*# sourceMappingURL=style.css.map */
