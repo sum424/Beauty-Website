@@ -138,6 +138,18 @@
         text-align: right;
         padding-right: 1%;
     }
+    .locations {
+        a:hover {
+            color: $navColor;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    .contact-info {
+        a:hover {
+            color: $navColor;
+            transition: all 0.3s ease-in-out;
+        }
+    }
 
     
 

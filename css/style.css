@@ -166,4 +166,14 @@ a {
   text-align: right;
   padding-right: 1%;
 }
+
+.contact .locations a:hover {
+  color: deeppink;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .contact-info a:hover {
+  color: deeppink;
+  transition: all 0.3s ease-in-out;
+}
 /*# sourceMappingURL=style.css.map */
