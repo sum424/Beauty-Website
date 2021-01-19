@@ -1,0 +1,34 @@
+/* Header nav */
+.header {
+  width: 100%;
+  background-color: deeppink;
+  text-align: center;
+  transition: all ease 0.5s;
+}
+
+.header a {
+  display: block;
+  color: #ffffff;
+  padding: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all ease 0.5s;
+}
+
+.header :hover {
+  background-color: #333333;
+}
+
+.header .section {
+  padding: 400px 0;
+  width: 100%;
+}
+
+.header .sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/*# sourceMappingURL=navbar.css.map */

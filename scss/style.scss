@@ -2,16 +2,18 @@
 @import "variables";
 @import "mixins";
 @import "fonts";
+@use "navbar";
+
 
 #head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: $navColor;
-    padding: 20px 5%;
+    padding: 10px 3%;
 
     img {
-        height: 60px;
+        height: 80px;
         cursor: pointer;
     }
     .navbar {
@@ -19,8 +21,8 @@
     }
     li {
         @include horizontal-listing;
-        /* display: inline-block; */
-        padding: 0 60px;
+        padding-top: 20px;
+        padding-left: 50px;
     }
     a {
         @include a-prop;
@@ -30,6 +32,12 @@
         transition: color 0.3s ease-in;
         text-decoration: none;
     }
+   /*   .sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    } */
 }
 
 /* for image slider */
@@ -81,6 +89,7 @@
         }
 }
 
+/* owner info section */
 .about-us {
     img {
         margin-left: 5px;
@@ -91,7 +100,6 @@
         width: 30%;
     }
     .owner-info {
-        top: 50%;
         margin-top: 15%;
     }
     h1 {
@@ -101,8 +109,27 @@
     blockquote {
         text-align: center;
     }
+    /* media-query for about us */
+    @include large-tablet {
+        .owner-info {
+            margin-top: 10%;
+        }
+    }
+
+    @include tablet {
+            img {
+                padding: 1%;
+                width: 24%;
+            }
+            .owner-info {
+                margin-top: 5%;
+            }
+        }
     
-}
+    }
+
+
+
 
 /* contact section */
 .contact {
@@ -150,8 +177,79 @@
             transition: all 0.3s ease-in-out;
         }
     }
+    /* media query section */
+    @include large-tablet {
+        .footer-lists {
+            h2 {
+                font-size: 1.3rem;
+            }
+            h3 {
+                font-size: 0.9rem;
+            }
+        }
+        .office-hours {
+           padding-left: 2%;
+        }
+        .locations {
+            padding-left: 5%;
+            padding-right: 1%;
+        }
+        .contact-info {
+            padding-right: 0;
+        }
+    }
 
-    
+    @include tablet {
+        .footer-lists {
+            h2 {
+                font-size: 1.1rem;
+            }
+            h3 {
+                font-size: 0.7rem;
+            }
+        .office-hours {
+        padding-left: 1%;
+        }
+        .locations {
+            padding-left: 1%;
+        }
+        .contact-info {
+            margin-right: 1%;
+        }
+    }
 
+    }
+
+    @include phone {
+        h1 {
+            font-size: 2rem;
+        }
+        .footer-lists {
+            display: flex;
+            flex-direction: column;
+            padding-left: 19%;
+            padding-right: 20%;
+            h2 {
+                font-size: 1.3rem;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+        .office-hours {
+        padding-left: 1%;
+        padding-bottom: 50px;
+        }
+        .locations {
+            padding-left: 1%;
+            padding-bottom: 50px;
+        }
+        .contact-info {
+            margin-right: 1%;
+            padding-bottom: 50px;
+            a {
+                padding-left: 15%;
+            }
+        }
+    }
+    }
 }
-

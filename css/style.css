@@ -6,6 +6,7 @@
   box-sizing: border-box;
   max-width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -17,16 +18,24 @@ a {
   text-decoration: none;
 }
 
+/* for tablets */
+@use "navbar";
 #head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: deeppink;
-  padding: 20px 5%;
+  padding: 10px 3%;
+  /*   .sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    } */
 }
 
 #head img {
-  height: 60px;
+  height: 80px;
   cursor: pointer;
 }
 
@@ -36,8 +45,8 @@ a {
 
 #head li {
   display: inline-block;
-  /* display: inline-block; */
-  padding: 0 60px;
+  padding-top: 20px;
+  padding-left: 50px;
 }
 
 #head a {
@@ -101,6 +110,11 @@ a {
   }
 }
 
+/* owner info section */
+.about-us {
+  /* media-query for about us */
+}
+
 .about-us img {
   margin-left: 5px;
   margin-bottom: 40px;
@@ -111,7 +125,6 @@ a {
 }
 
 .about-us .owner-info {
-  top: 50%;
   margin-top: 15%;
 }
 
@@ -124,9 +137,26 @@ a {
   text-align: center;
 }
 
+@media screen and (max-width: 975px) {
+  .about-us .owner-info {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-us img {
+    padding: 1%;
+    width: 24%;
+  }
+  .about-us .owner-info {
+    margin-top: 5%;
+  }
+}
+
 /* contact section */
 .contact {
   background: #8014ff;
+  /* media query section */
 }
 
 .contact h1 {
@@ -175,5 +205,75 @@ a {
 .contact .contact-info a:hover {
   color: deeppink;
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 975px) {
+  .contact .footer-lists h2 {
+    font-size: 1.3rem;
+  }
+  .contact .footer-lists h3 {
+    font-size: 0.9rem;
+  }
+  .contact .office-hours {
+    padding-left: 2%;
+  }
+  .contact .locations {
+    padding-left: 5%;
+    padding-right: 1%;
+  }
+  .contact .contact-info {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .footer-lists h2 {
+    font-size: 1.1rem;
+  }
+  .contact .footer-lists h3 {
+    font-size: 0.7rem;
+  }
+  .contact .footer-lists .office-hours {
+    padding-left: 1%;
+  }
+  .contact .footer-lists .locations {
+    padding-left: 1%;
+  }
+  .contact .footer-lists .contact-info {
+    margin-right: 1%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .contact h1 {
+    font-size: 2rem;
+  }
+  .contact .footer-lists {
+    display: flex;
+    flex-direction: column;
+    padding-left: 19%;
+    padding-right: 20%;
+  }
+  .contact .footer-lists h2 {
+    font-size: 1.3rem;
+  }
+  .contact .footer-lists h3 {
+    font-size: 1rem;
+  }
+  .contact .footer-lists .office-hours {
+    padding-left: 1%;
+    padding-bottom: 50px;
+  }
+  .contact .footer-lists .locations {
+    padding-left: 1%;
+    padding-bottom: 50px;
+  }
+  .contact .footer-lists .contact-info {
+    margin-right: 1%;
+    padding-bottom: 50px;
+  }
+  .contact .footer-lists .contact-info a {
+    padding-left: 15%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
