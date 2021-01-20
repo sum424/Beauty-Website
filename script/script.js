@@ -10,4 +10,9 @@ $(document).ready(() => {
             $(".header").removeClass("sticky");
         }
     });
+    //for head burger
+    $(".navbar").click(function() {
+        $(".icon").toggleClass("close");
+        $(".navbar ul").slideToggle(500);
+    });
 });
