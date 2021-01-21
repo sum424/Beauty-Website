@@ -55,24 +55,40 @@ a {
 }
 
 @media screen and (max-width: 420px) {
+  #head {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    display: block;
+  }
+  #head img {
+    height: 130px;
+    margin-left: 30%;
+  }
   #head .navbar {
     /* for burger nav */
     /* end of burger nav */
     flex-direction: column;
   }
   #head .navbar ul {
+    display: none;
+    top: 0;
     margin-top: 0px;
     margin-bottom: 0rem;
-    text-align: center;
     font-size: 2rem;
+    padding-left: 2%;
+  }
+  #head .navbar .ul-disp {
+    display: block !important;
   }
   #head .navbar #wrapper {
     display: inline-block;
     border-radius: 500px;
-    margin: 10px;
-    margin-left: 20%;
+    /*  margin: 10px; */
+    margin-left: -5%;
     position: relative;
-    padding: 50px;
+    padding: 15px;
     cursor: pointer;
   }
   #head .navbar .circle {
@@ -170,6 +186,12 @@ a {
 @media (max-width: 800px) {
   .services .mx-30 {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services .wrapper {
+    padding-left: 4%;
   }
 }
 

@@ -33,23 +33,43 @@
         text-decoration: none;
     }
     /* media query for nav */
-    @include phone {        
+    @include phone {   
+        position: fixed !important;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+        display: block;
+        img {
+            height: 130px;
+            margin-left: 30%;
+
+        }
+
         .navbar {
             ul {
+                display: none;
+                top: 0;
                 margin-top: 0px;
                 margin-bottom: 0rem;
-                text-align: center;
                 font-size: 2rem;
+                padding-left: 2%;
+                
             }
+           
+            .ul-disp {
+                display: block !important;
+               
+            }
+            
         /* for burger nav */
         #wrapper {
            // background: #0d6fba;
             display: inline-block;
             border-radius: 500px;
-            margin: 10px;
-            margin-left: 20%;
+           /*  margin: 10px; */
+            margin-left: -5%;
             position: relative;
-            padding: 50px;
+            padding: 15px;
             cursor: pointer;
         }
         
@@ -103,6 +123,7 @@
          } 
         }
     }
+    
 }
 
 /* for image slider */
@@ -157,6 +178,12 @@
             .mx-30{
                 margin-bottom: 30px;
             }
+        }
+        @include tablet {
+                .wrapper {
+                    padding-left: 4%;
+            }
+            
         }
         @include phone {
             .row {

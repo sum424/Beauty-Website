@@ -13,6 +13,6 @@ $(document).ready(() => {
     //for head burger
     $(".navbar").click(function() {
         $(".icon").toggleClass("close");
-        $(".navbar ul").slideToggle(500);
+        $(".navbar ul").toggleClass(".ul-disp").slideToggle(500);
     });
 });
