@@ -56,10 +56,10 @@ a {
 
 @media screen and (max-width: 420px) {
   #head {
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-    z-index: 3;
+    /* position: fixed !important;
+        top: 0;
+        width: 100%;
+        z-index: 3; */
     display: block;
   }
   #head img {

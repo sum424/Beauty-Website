@@ -34,10 +34,10 @@
     }
     /* media query for nav */
     @include phone {   
-        position: fixed !important;
+        /* position: fixed !important;
         top: 0;
         width: 100%;
-        z-index: 3;
+        z-index: 3; */
         display: block;
         img {
             height: 130px;
