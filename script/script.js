@@ -15,4 +15,8 @@ $(document).ready(() => {
         $(".icon").toggleClass("close");
         $(".navbar ul").toggleClass(".ul-disp").slideToggle(500);
     });
+       
+    AOS.init();
 });
+
+

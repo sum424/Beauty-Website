@@ -177,6 +177,10 @@ a {
   text-transform: uppercase;
 }
 
+.services .row {
+  overflow: hidden;
+}
+
 .services .card-title {
   text-transform: uppercase;
   font-weight: bold;
@@ -203,10 +207,12 @@ a {
 
 /* owner info section */
 .about-us {
+  overflow: hidden;
   /* media-query for about us */
 }
 
 .about-us img {
+  overflow-x: hidden;
   margin-left: 5px;
   margin-bottom: 40px;
   float: left;
@@ -225,6 +231,7 @@ a {
 }
 
 .about-us blockquote {
+  overflow: hidden;
   text-align: center;
 }
 
@@ -264,6 +271,7 @@ a {
 
 /* contact section */
 .contact {
+  overflow: hidden;
   background: #8014ff;
   /* media query section */
 }
@@ -276,6 +284,7 @@ a {
 }
 
 .contact .footer-lists {
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -292,6 +301,7 @@ a {
 }
 
 .contact .locations {
+  overflow: hidden;
   padding-left: 3%;
   padding-right: 3%;
 }
@@ -309,6 +319,10 @@ a {
 .contact .locations a:hover {
   color: deeppink;
   transition: all 0.3s ease-in-out;
+}
+
+.contact .contact-info {
+  overflow: hidden;
 }
 
 .contact .contact-info a:hover {
