@@ -11,12 +11,24 @@ $(document).ready(() => {
         }
     });
     //for head burger
-    $(".navbar").click(function() {
-        $(".icon").toggleClass("close");
-        $(".navbar ul").toggleClass(".ul-disp").slideToggle(500);
+    
+        
+
+        var width = $(window).width();
+        if(width <= 420) {
+            $(".navbar").click(function() {
+                $(".icon").toggleClass("close");
+                $(".navbar ul").toggleClass(".ul-disp").slideToggle(500);
+            });
+        }
+        else {
+            $(".icon").removeClass("close");
+            $(".navbar ul").removeClass(".ul-disp");
+        }
+    //for div animation   
+    AOS.init({
+        duration: 1000
     });
-       
-    AOS.init();
 });
 
 

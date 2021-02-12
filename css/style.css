@@ -36,6 +36,7 @@ a {
 
 #head .navbar {
   list-style-type: none;
+  display: inline-block;
 }
 
 #head li {
@@ -54,7 +55,7 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   #head {
     /* position: fixed !important;
         top: 0;
@@ -146,7 +147,7 @@ a {
   height: 525px;
 }
 
-@media screen and (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   #slideshow .img-slider img {
     height: 400px;
   }
@@ -193,13 +194,13 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .services .wrapper {
     padding-left: 4%;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   .services .row {
     margin-left: 0;
   }
@@ -235,13 +236,13 @@ a {
   text-align: center;
 }
 
-@media screen and (max-width: 975px) {
+@media only screen and (max-width: 975px) {
   .about-us .owner-info {
     margin-top: 10%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .about-us img {
     padding: 1%;
     width: 24%;
@@ -251,7 +252,7 @@ a {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   .about-us img {
     float: none;
     height: 300px;
@@ -330,7 +331,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 975px) {
+@media only screen and (max-width: 975px) {
   .contact .footer-lists h2 {
     font-size: 1.3rem;
   }
@@ -349,7 +350,7 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .contact .footer-lists h2 {
     font-size: 1.1rem;
   }
@@ -367,7 +368,7 @@ a {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   .contact h1 {
     padding-right: 10%;
     font-size: 2rem;

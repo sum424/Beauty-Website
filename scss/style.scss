@@ -18,7 +18,9 @@
     }
     .navbar {
         list-style-type: none;
+        display: inline-block;
     }
+    
     li {
         @include horizontal-listing;
         padding-top: 20px;

@@ -8,19 +8,19 @@
 
 /* for tablets */
 @mixin large-tablet {
-    @media screen and (max-width: 975px) {
+    @media only screen and (max-width: 975px) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
        @content;
     }  
     
 }
 @mixin phone {
-    @media screen and (max-width: 420px) {
+    @media only screen and (max-width: 420px) {
         @content;
     }
 }
